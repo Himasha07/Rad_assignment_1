@@ -1,0 +1,134 @@
+.NavBarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10000;
+    background-color: white;
+    
+}
+.NavBarLogo{
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.NavMenu{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns:repeat(4, auto) ;
+    grid-gap: 100px;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 30rem;
+}
+.nav-Links{
+    text-decoration: none;
+    color: #222;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.7rem 1 rem;
+    white-space: nowrap;
+}
+
+.nav-Links link{
+    padding-right: 10px;
+}
+
+.nav-Links:hover{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-Links-mobile{
+    display: block;
+}
+
+.menuItems{
+    display: none;
+}
+
+@media  screen and (max-width: 850px){
+    .NavBarItems{
+        z-index: 99;
+        
+    }
+    .NavMenu{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       background-color: white;
+       width: 100%;
+       height: auto;
+       position: absolute;
+       top: 0;
+       left: -100%;
+       opacity: 0;
+       align-items: strech;
+       padding:80px 0 30px 0 ;
+       margin: 0;
+       z-index: -1;
+       transition: 0.2s ease-in-out;
+       border-radius: 13px;
+    }
+
+    .NavMenu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.2s ease-in-out;
+        width: 44%;
+    }
+
+    .nav-Links{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+
+    }
+    .nav-Links:hover{
+        background-color: black;
+        transition: none;
+        padding: 5px 11px;
+
+    }
+
+    .nav-Links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 4px;
+        width: 80%;
+        background-color: aquamarine;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .menuItems{
+        display: block;
+        cursor: pointer;
+    }
+    .menuItems i{
+        font-size: 1.2rem;
+        color: black;
+    }
+}

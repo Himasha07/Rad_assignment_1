@@ -1,0 +1,17 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rosybrown; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Max width for the form */
+    margin: auto; /* Center form horizontally */
+    
+}
+.heading{
+    font-size: 24px;
+    margin-bottom: 0px; /* Spacing below the heading */
+    color: black; /* Darker color for better readability */
+}

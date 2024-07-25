@@ -1,0 +1,45 @@
+.aboutItems {
+    display: flex;
+    justify-content: center; /* Center the entire nav */
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    width: 50%;
+    height: 80px;
+    border-radius: 13px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    background-color: pink;
+}
+
+.aboutItems ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.aboutItems li {
+    margin: 0 15px; 
+}
+
+
+.aboutItems hover {
+    background-color: black; 
+}
+
+.aboutdes{
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500;
+    background-color:pink;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    line-height: 1.6;
+    border: 2px solid black;
+    color: black;
+}

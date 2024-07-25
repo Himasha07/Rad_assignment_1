@@ -1,0 +1,75 @@
+
+
+.destinations{
+    margin: 2rem 6rem;
+}
+.destinations h1{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.firstDestination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-bottom: 3rem;
+}
+
+.firstDestinationReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.desText{
+    text-align: start;
+    font-size: 1.1rem;
+    width: 40%;
+    margin: 2rem
+    
+}
+.desText h2{
+    padding-bottom: 3rem;
+    font-size: 3 rem;
+
+}
+.des1img{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+.des1img img{
+    width: 22vw;
+    border-radius: 3rem;
+    object-fit: cover;
+    height: 350px;
+}
+
+.des1img :nth-child(2)
+{
+   position: absolute;
+   top: -10%;
+   right: 0;
+   
+}
+
+@media  screen and (max-width: 500px) {
+    .destinations{
+        margin: 2rem 4rem;
+    }
+
+    .firstDestination{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2px;
+    }
+
+    .desText{
+        width: 100%;
+    }
+}
